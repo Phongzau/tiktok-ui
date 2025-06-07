@@ -7,8 +7,10 @@ export default defineConfig({
     resolve: {
         alias: {
             '@components': path.resolve(__dirname, 'src/components'),
-            '@utils': path.resolve(__dirname, './src'), // alias cho myAlert.jsx nằm trong src
+            '@src': path.resolve(__dirname, './src'), // alias cho myAlert.jsx nằm trong src
             '@assets': path.resolve(__dirname, 'src/assets'),
+            '@utils': path.resolve(__dirname, 'src/utils'),
+            '@apiServices': path.resolve(__dirname, 'src/apiServices'),
         },
     },
 });

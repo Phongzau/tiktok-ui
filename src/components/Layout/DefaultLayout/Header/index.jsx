@@ -160,7 +160,7 @@ function Header() {
                             <Image
                                 className={cx('user-avatar')}
                                 alt="Nguyen Van A"
-                                src="https://scontent.fhan14-4.fna.fbcdn.net/v/t39.30808-1/441876901_122120069438272999_6419267552810519686_n.jpg?stp=cp6_dst-jpg_s200x200_tt6&_nc_cat=102&ccb=1-7&_nc_sid=1d2534&_nc_ohc=3NbHJMFxK-sQ7kNvwGrMj79&_nc_oc=AdnRfHt59Bh1yKKNY0jpWfv8J881PT7gV6m5E1rg9myHcvhLw59-jd2T3ZJgpTaVApmhszaqol5lmIcOiVOYXE1y&_nc_zt=24&_nc_ht=scontent.fhan14-4.fna&_nc_gid=Pe8eqSOrbQSTT5t2JMhRJg&oh=00_AfLgn6P7kLYmup4AWBFTTXAwQeMJ-ekCoyY_pONGT5wT8Q&oe=683DD2C"
+                                src="https://p16-sign-sg.tiktokcdn.com/tos-alisg-avt-0068/34a1c4c0e99eed981f0f9a1053fbbf11~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=14579&refresh_token=cd9135e5&x-expires=1749290400&x-signature=ZoRvNybAt0mp3sFt%2F2Bk33Ed7IM%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=my"
                             />
                         ) : (
                             <button className={cx('more-btn')}>

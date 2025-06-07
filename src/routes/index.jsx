@@ -22,7 +22,7 @@ const router = createBrowserRouter([
         children: [
             { index: true, element: withLayout(DefaultLayout, Home) },
             { path: '/following', element: withLayout(DefaultLayout, Following) },
-            { path: '/profile', element: withLayout(DefaultLayout, Profile) },
+            { path: '/:nickname', element: withLayout(DefaultLayout, Profile) },
             { path: '/upload', element: <Upload /> },
             { path: '/search', element: <Search /> },
         ],
