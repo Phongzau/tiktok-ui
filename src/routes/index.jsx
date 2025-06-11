@@ -1,3 +1,4 @@
+import routesConfig from '@config/routes';
 import { createBrowserRouter } from 'react-router-dom';
 import App from '../App';
 import Following from '../pages/Following';
@@ -17,14 +18,14 @@ function withLayout(Layout, Page) {
 
 const router = createBrowserRouter([
     {
-        path: '/',
+        path: routesConfig.home,
         element: <App />,
         children: [
             { index: true, element: withLayout(DefaultLayout, Home) },
-            { path: '/following', element: withLayout(DefaultLayout, Following) },
-            { path: '/:nickname', element: withLayout(DefaultLayout, Profile) },
-            { path: '/upload', element: <Upload /> },
-            { path: '/search', element: <Search /> },
+            { path: routesConfig.following, element: withLayout(DefaultLayout, Following) },
+            { path: routesConfig.profile, element: withLayout(DefaultLayout, Profile) },
+            { path: routesConfig.upload, element: <Upload /> },
+            { path: routesConfig.search, element: <Search /> },
         ],
     },
 ]);

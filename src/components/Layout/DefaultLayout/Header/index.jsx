@@ -1,4 +1,6 @@
 import images from '@assets/images';
+import { Link } from 'react-router-dom';
+import routesConfig from '@config/routes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faCircleQuestion,
@@ -96,7 +98,9 @@ function Header() {
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
-                <img src={images.logo} alt="Tiktok" />
+                <Link className={cx('logo-link')} to={routesConfig.home}>
+                    <img src={images.logo} alt="Tiktok" />
+                </Link>
 
                 {/* <HeadlessTippy
                     interactive={true}
