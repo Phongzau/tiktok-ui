@@ -18,6 +18,7 @@
 .inner {
     height: 100%;
     width: var(--default-layout-witdh);
+    padding: 0 var(--default-layout-horizontal-spacer);
     display: flex;
     align-items: center;
     justify-content: space-between;

@@ -1,5 +1,5 @@
-function Search() {
-    return <h2>Search page</h2>;
+function Live() {
+    return <h2>Live page</h2>;
 }
 
-export default Search;
+export default Live;

@@ -7,6 +7,7 @@ import Profile from '../pages/Profile';
 import DefaultLayout from '@src/layouts';
 import Upload from '../pages/Upload';
 import Search from '../pages/Search';
+import Live from '../pages/Search';
 
 function withLayout(Layout, Page) {
     return (
@@ -26,6 +27,7 @@ const router = createBrowserRouter([
             { path: config.routes.profile, element: withLayout(DefaultLayout, Profile) },
             { path: config.routes.upload, element: <Upload /> },
             { path: config.routes.search, element: <Search /> },
+            { path: config.routes.live, element: withLayout(DefaultLayout, Live) },
         ],
     },
 ]);
